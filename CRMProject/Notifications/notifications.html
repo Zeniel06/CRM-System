@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Notifications</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../general/styles/header.css">
+        <link rel="stylesheet" href="../general/styles/style.css">
+        <link rel="stylesheet" href="../general/styles/menu.css">
+        <link rel="stylesheet" href="../general/styles/table.css">
+        <link rel="stylesheet" href="../general/styles/back-button.css">
+        <link rel="stylesheet" href="styles/notifications.css">
+    </head>
+    <body>
+
+        <div class="header">
+
+        </div>
+
+        <div class="menu">
+            <div class="menu-content">
+                <div class="menu-input">
+                    <input type = "text" placeholder="Search">
+                </div>
+
+                <div class="menu-item">
+                    <a href="all-customers.html">Customer Management</a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="all-leads.html">Lead Management</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="notifications-container">
+            <div class="notification-wrapper">
+                <h2 class="reminder-heading">Reminders:</h2>
+                <table class="notification-table">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Customer/Lead</th>
+                            <th>Details</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="notification-body">
+                        <tr class="pending">
+                            <td>Customer</td>
+                            <td>John Doe</td>
+                            <td>New customer added</td>
+                            <td>DD/MM/YYYY</td>
+                            <td>
+                                <button class="status-btn status-pending" onclick="toggleStatus(this)">Pending</button>
+                            </td>
+                            
+                        </tr>
+                        <tr class="complete">
+                            <td>Lead</td>
+                            <td>Sarah Smith</td>
+                            <td>Updated status to "Interested"</td>
+                            <td>DD/MM/YYYY</td>
+                            <td>
+                                <button class="status-btn status-complete" onclick="toggleStatus(this)">Complete</button>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        
+        
+
+
+        <script src="../general/scripts/header-admin.js"></script>
+        <script src="../general/scripts/menu-animation.js"></script>
+        <script src="scripts/notifications.js"></script>
+    </body>
+</html>

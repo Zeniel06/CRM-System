@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lead Interaction</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../general/styles/style.css">
+        <link rel="stylesheet" href="../general/styles/header.css">
+        <link rel="stylesheet" href="../general/styles/menu.css">
+        <link rel="stylesheet" href="../general/styles/table.css">
+        <link rel="stylesheet" href="../general/styles/back-button.css">
+    </head>
+    <body>
+        <div class="back-button">
+            <a href="salesrep-lead.html">
+                <img class="return-icon" src="../general/menu-images/return-icon.png">
+            </a>
+        </div>
+
+        <div class="header">
+
+        </div>
+
+        <div class="menu">
+            <div class="menu-content">
+                <div class="menu-input">
+                    <input type = "text" placeholder="Search">
+                </div>
+
+                <div class="menu-item">
+                    <a href="salesrep-hp.html">Home</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome">
+            <p>
+                Lead Interactions
+            </p>
+        </div>
+
+        <div class = "container">
+            <div class="table-header">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search customers" onkeyup="filterCustomers()">
+                </div>
+            </div>
+
+
+            <table id="customerTable">
+                <thead>
+                    <tr>
+                        <th>
+                            No
+                        </th>
+                        <th>
+                            Interaction type
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+
+            <div class="table-actions">
+                <a class="addButton" href="add-new-interaction.html">Add</a>
+            </div>
+        </div>
+
+        <script src="../general/scripts/header-customer.js"></script>
+        <script src="../general/scripts/menu-animation.js"></script>
+
+    </body>
+</html>

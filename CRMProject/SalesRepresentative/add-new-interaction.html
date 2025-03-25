@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Add New Interaction</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../general/styles/header.css">
+        <link rel="stylesheet" href="../general/styles/style.css">
+        <link rel="stylesheet" href="../general/styles/menu.css">
+        <link rel="stylesheet" href="../general/styles/table.css">
+        <link rel="stylesheet" href="../general/styles/back-button.css">
+        <link rel="stylesheet" href="styles/form.css">
+    </head>
+    <body>
+        <div class="back-button">
+            <a href="cust-interaction.html">
+                <img class="return-icon" src="../general/menu-images/return-icon.png">
+            </a>
+        </div>
+
+        <div class="header">
+
+        </div>
+
+        <div class="menu">
+            <div class="menu-content">
+                <div class="menu-input">
+                    <input type = "text" placeholder="Search">
+                </div>
+
+                <div class="menu-item">
+                    <a href="">Customer Management</a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="">Lead Management</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="add-user-form-container">
+            <h2>Add New interaction</h2>
+            <form action="" method="POST">
+                
+                <input placeholder="Interaction Type" type="text" id="interaction-type" name="interaction-type" required><br><br>
+        
+                <input placeholder="Description" type="text" id="description" name="description" required><br><br>
+
+                <input type="date" name="date" required><br><br>
+
+                <button class="add-user-button" type="submit">Add New Interaction</button>
+            </form>
+        </div>
+
+        <script src="../general/scripts/header-admin.js"></script>
+        <script src="../general/scripts/menu-animation.js"></script>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+.container{
+    display: flex;
+    flex-direction: column; /* Stack "Clients:" above the table */
+    align-items: center; /* Centers both elements as a group */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+#customerTable {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#customerTable th, #customerTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#customerTable th {
+    background-color: #f2f2f2;
+}
+
+/* Button style */
+.viewButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border:none;
+    box-shadow:none;
+    outline:none;
+    cursor: pointer;
+}
+
+.viewButton:hover {
+    background-color: #45a049;
+}
+
+.delButton {
+    background-color: rgb(241, 58, 58);
+}
+
+.delButton:hover {
+    background-color: #e51e1e;
+}
+
+.clients-header {
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-start; /* Aligns text to the left edge of the container */
+    margin-bottom: 10px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between; /* Pushes "Clients:" left and search bar right */
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* Matches table width */
+    margin-bottom: 10px;
+}
+
+/* Ensure the search bar stays inside the table width */
+.search-bar {
+    width: 250px;
+    display: flex;
+    justify-content: flex-end; /* Aligns input to the right */
+}
+
+/* Search input field */
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.table-header {
+    display: flex;
+    justify-content: end; /* Push "Clients:" left and search bar right */
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 10px;
+}
+
+/* Ensure search bar stays inside table width */
+.search-bar {
+    width: 250px;
+    display: flex;
+    justify-content: flex-end; /* Align input to the right */
+}
+
+/* Search input */
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px;
+    padding-left:10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Add Action Button */
+.table-actions {
+    display: flex;
+    justify-content: flex-end; /* Pushes button to the right */
+    width: 100%;
+    max-width: 1000px; /* Matches table width */
+    margin-top: 10px;
+}
+
+.addButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #007aff;
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.addButton:hover {
+    background-color: #005ecb;
+}
